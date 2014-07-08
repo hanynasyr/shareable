@@ -5,8 +5,10 @@ A Laravel 4 package to make it easy to add social sharing buttons to your applic
 This Laravel 4 package provides helpers for easily adding social sharing buttons to your views. This package includes support for:
 
 - Facebook
+- Facebook Like
 - Google Plus
 - Twitter
+
 
 
 ## Installation
@@ -45,6 +47,19 @@ url        | string     | ''             |
 width      | integer    | 100            | 
 type       | string     | 'button_count' | 'box_count', 'button_count', 'button', 'icon_link', 'icon', 'link'
 
+
+### FacebookLike
+[developers.facebook.com/docs/plugins/like-button](https://developers.facebook.com/docs/plugins/like-button)
+
+    {{ Shareable::facebookLike($options = array()) }}
+
+Option     			| Type       | Default        | Possible Options
+---------- 			| ---------- | ----------     | ----------
+url        			| string     | ''             | 
+type                | string	 | 'standard'	  | 'button_count', 'button_count', 'box_count', 'button'
+action     			| string     | 'like' 		  | 
+show_faces 			| string     | 'true'		  | 'false'
+include_share_btn	| string	 | 'false'		  | 'true'
 
 ### Google Plus 
 [developers.google.com/+/web/share](https://developers.google.com/+/web/share/)
